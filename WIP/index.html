@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prakhar Bhardwaj | Work in Progress</title>
+
+	<link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/main.css">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: rgba(0,0,0,0.7);
+		}
+
+		.wip--page-subtitle{
+			margin-top: -14px;
+			font-weight: 400;
+		}
+		iframe{
+			border:0;padding: 0;margin: 0;
+			    background-color: #e8e8e8;
+		}
+		.wip--box-cont{
+			margin: 100px 0;
+		}
+		.wip--box-cont-img{
+			max-width: 100%;
+			border-radius: 4px;
+			box-shadow: 0 5px 35px rgba(0,0,0,0.2)
+		}
+		.wip--box-cont-cap{
+			margin-top: 10px;
+			font-size: 14px;
+			font-weight: 300;
+			opacity: 1;
+    		color: hsla(0, 0%, 17%, 0.83);
+    		line-height: 20px;
+    		text-align: left;
+		}
+		.wip--box-fig-title{
+			text-align: left;
+		}
+		.wip--page-title{
+			font-size: 18px;
+		}
+
+		a{
+		  text-decoration: none;
+		  color: rgba(0,0,0,0.8);
+		  background-image: linear-gradient(to bottom,transparent 50%,blue 50%);
+		  background-position: 0 106%;
+		  background-repeat: repeat-x;
+		  background-size: 100% .25rem;
+		  text-shadow: .15rem 0 #FFF,.25rem 0 #FFF,-.15rem 0 #FFF,-.25rem 0 #FFF;
+		}
+
+		hr{
+			opacity: 0.2;
+		}
+	</style>
+</head>
+<body>
+	<div class="body-wrapper">
+		<h2 class="wip--page-title">All the things here are uncategorized things I'm working/worked on in the past. </h2> <h6 class="wip--page-subtitle">have some thoughts? <a href="mailto:prakhar625@gmail.com">send them my way!</a></h6>
+		<br>
+
+		<div class="wip--box">
+			<h3 class="wip--box-title"></h3>
+
+			<figure class="wip--box-cont">
+				<iframe src="http://share.framerjs.com/1kf1iul9d50x/" frameborder="0" width="960" height="600"></iframe>
+				<div class="wip--box-fig-title">Rethinking the house search flow @nestaway</div>
+				<figcaption class="wip--box-cont-cap"> A small interaction exercise I did recently for the house search flow which was being used at nestaway's website. The main outline of this task was to make the flow look simple, connected and interactive. It's practicality and usefulness with the current design language is very low, but atleast it helped me better understand framer and coffeescript.
+				<br><br>
+				You can click on any of the city names or the city cards to get started!
+				</figcaption>
+			</figure>
+			
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe src="http://share.framerjs.com/vxbjajr689b0/" frameborder="0" width="960" height="600"></iframe>
+				<!-- <iframe src="http://share.framerjs.com/3ua5d24u7rn2/" frameborder="0" width="960" height="600"></iframe> -->
+				<div class="wip--box-fig-title"> Hybrid House Search Interface @nestaway</div>
+				<figcaption class="wip--box-cont-cap">At nestaway we were struggling while deciding which view to use as a default view for the new users, who are searching for houses - Map view or List view? <br><br>
+				<a href="https://www.safaribooksonline.com/library/view/mobile-design-pattern/9781449368586/httpatomoreillycomsourceoreillyimages2022022.png.jpg">Both</a> of these are very common patterns which can be seen on real estate related wesbites. Map view shows a the houses within a geographic location plotted on a map of that location, where users can click the plotted links on the map to see details of that house. These are good for cases when a user is searching in a substantially big geo-location and the property's location is of the primary importance.<br><br>
+				In a list view, houses are shown as a list, without any geographical context. This is good for granular search where the user has already - through the flow - set the search location small enough so that it no longer matters to them the precise location of the place, and they can just apply more filters and search precisely for what they are looking for. <br><br>
+				Through our research we found that map view are quite popular and help users see wide variety of results, but their share to conversions is less than the List view - which was conterintuitive to me.
+				<br><br>
+				So I tried experimenting with a hybrid interface, where the geo-location is assisting the user in a less prominent way and whihc can parallaly compete with list view on the bsis of ease-of-use, where users can just scroll the list for scanning multiple items at the fastest pace.
+				<br><br>
+				Have a look at the prototype above, or <a href="http://share.framerjs.com/vxbjajr689b0/">open it in a new tab</a> if it's illegible. <br>
+				<br> Here you can see that the layout is a little different than the traditional layouts. The map is treated as a base layer, which provides geo-spatial context through out the search flow and stays in the background if not needed. The List is a layer which slided on top of this base when needed. If you scroll on the list (you might have to click and drag up on laptops/desktops) the list shifts and takes majority of the available space, limiting the map to only a small portion - good enough for setting the context. <br>
+				<br>
+				If you click on the empty map area on the right edge, the map takes up majority space, which in a hi-fi version should work when the user clicks on any part of the map, which is empty.
+				<br><br>
+				If the user clicks on any of the dots - which represent the available results, the house preview opens up. Which also opens up when any of the house cards are clicked on - and by interacting with it, user is taken forward in that particular flow.
+
+				<br><br><br> Let me know if you have any idea to make this interface better in any way possible, or if you have any opposing view too. Whatever make this interface better will help a lot.
+				</figcaption>
+			</figure>
+			
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe src="http://share.framerjs.com/y0vbibdfvncv/" frameborder="0" width="960" height="600"></iframe>
+				<div class="wip--box-fig-title">Microinteraction for search box @nestaway</div>
+				<figcaption class="wip--box-cont-cap"> While experimenting with the landing page design, tried out this microinteraction to visualize how to integrate the quick search with the search box / locality search event. Where quick search provides users with an option to search houses in popular localities on the platform with a single click. <br><br> In the exixting flow they have to type the name of those localities in the search box - by themselves - and then select from the dropdown to select it. But due to high poularity of the loc, it's better to provide powerusers shortcuts.</figcaption>
+			</figure>
+
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe src="http://share.framerjs.com/mcvd8cdws77j/" frameborder="0" width="960" height="600"></iframe>
+				<div class="wip--box-fig-title">Microinteraction for a file upload sequence</div>
+				<figcaption class="wip--box-cont-cap">
+				This was a part of the work I did for an offline app. This is a prototype for a microinteraction where a user uploads a document, and it is processed before providing the user with a downloadable file of the report generated on the date of the uploaded file. <br><br>
+				You can click on upload-circle to see it work.</figcaption>
+			</figure>
+
+			<hr>
+			
+			<figure class="wip--box-cont">
+				<iframe height='600' width="960" scrolling='no' title='let's rotate a gradient' src='//codepen.io/prakhar625/embed/kkBKQk/?height=600&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/prakhar625/pen/kkBKQk/'>let's rotate gradients</a> by Prakhar Bhardwaj (<a href='http://codepen.io/prakhar625'>@prakhar625</a>) on <a href='http://codepen.io'>CodePen</a></iframe>
+				<figcaption class="wip--box-cont-cap">While playing with SVGs created this pseudo-animation</figcaption>
+			</figure>
+			<hr>
+			
+			<figure class="wip--box-cont">
+				<img class="wip--box-cont-img" src="../images/wip/ika--composite.jpg" alt="image here">
+				<figcaption class="wip--box-cont-cap">visualizing a thought - 20/02/16</figcaption>
+			</figure>
+			
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe height='600' width="960" scrolling='no' title='let's rotate a gradient' src='//codepen.io/prakhar625/embed/eZvyEx/?height=600&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See this<a href='https://codepen.io/prakhar625/pen/eZvyEx/'>Pen</a> by Prakhar Bhardwaj (<a href='http://codepen.io/prakhar625'>@prakhar625</a>) on <a href='http://codepen.io'>CodePen</a></iframe>
+				<figcaption class="wip--box-cont-cap">SVG Gradient animation</figcaption>
+			</figure>
+
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe height='600' width="960" scrolling='no' title='let's rotate a gradient' src='//codepen.io/prakhar625/embed/bBdeLw/?height=600&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/prakhar625/pen/bBdeLw/'>Three.js Objects</a> by Prakhar Bhardwaj (<a href='http://codepen.io/prakhar625'>@prakhar625</a>) on <a href='http://codepen.io'>CodePen</a></iframe>
+				<figcaption class="wip--box-cont-cap">Three.js first trial</figcaption>
+			</figure>
+
+			<hr>
+
+			<figure class="wip--box-cont">
+				<iframe src="../glitch-test-1.html" frameborder="0" height='600' width="960" scrolling='no' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+				<figcaption class="wip--box-cont-cap">Three.js second trial</figcaption>
+			</figure>
+
+			<hr>
+			
+			<figure class="wip--box-cont">
+				<iframe src="../glitch-test-2.html" frameborder="0" height='600' width="960" scrolling='no' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'></iframe>
+				<figcaption class="wip--box-cont-cap">Same as the one above, but with masking enabled</figcaption>
+			</figure>
+			
+
+		</div>
+	</div>
+	
+</body>
+</html>

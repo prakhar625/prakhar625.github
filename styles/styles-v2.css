@@ -1,0 +1,87 @@
+html{
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+body {
+    margin: 0;
+    padding:0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+div.g-btn {
+    position: absolute;
+    z-index: 700;
+    color: #000;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+label, input {
+    cursor: pointer;
+}
+
+.title-text{
+    font-family: "kepler-std-semicondensed-dis",serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container.hero{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    height: 100vh;
+    z-index: 500;
+}
+
+.hero div.title{
+    font-family: "kepler-std-semicondensed-dis",serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    text-align: center;
+    baseline-shift: baseline;
+    color: #fff;
+    display: inline;
+    white-space: pre-wrap;
+}
+
+.hero svg.title{
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    font-family: "kepler-std-semicondensed-dis",serif;
+}
+
+.hero svg.title .alpha{
+    fill: #fff;
+}
+.hero svg.title #name{
+    font-size: 10rem;
+}
+
+.hero svg.title .white-rect{
+    mask: url(#mask);
+    background: transparent;
+}
+/*
+.padded-multi-line {
+  display: inline;
+  background: black;
+  box-shadow: 10px 0 0 black, -10px 0 0 black;
+}*/
+
+canvas{
+    position: absolute;
+    top:0; left: 0;
+    z-index: 0;
+}

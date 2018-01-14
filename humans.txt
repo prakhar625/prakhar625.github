@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <name> -- <role> -- <twitter>
+  Prakhar Bhardwaj  --  Designer & Developer  --  @mag_ops
+
+# THANKS
+
+  The Internet
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JavaScript & Photoshop

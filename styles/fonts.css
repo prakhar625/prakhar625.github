@@ -1,0 +1,65 @@
+/* font files */
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/gotham-black-webfont.eot);
+  src: local('Gotham Black'), local('gotham-black-webfont'), url(../fonts/gotham-black-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-black-webfont.woff) format('woff'), url(../fonts/gotham-black-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/gotham-bold-webfont.eot);
+  src: local('Gotham Bold'), local('gotham-bold-webfont'), url(../fonts/gotham-bold-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-bold-webfont.woff) format('woff'), url(../fonts/gotham-bold-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/gotham-book-webfont.eot);
+  src: local('Gotham Book'), local('gotham-book-webfont'), url(../fonts/gotham-book-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-book-webfont.woff) format('woff'), url(../fonts/gotham-book-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/gotham-medium-webfont.eot);
+  src: local('Gotham Medium'), local('gotham-medium-webfont'), url(../fonts/gotham-medium-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-medium-webfont.woff) format('woff'), url(../fonts/gotham-medium-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/gotham-light-webfont.eot);
+  src: local('Gotham Light'), local('gotham-light-webfont'), url(../fonts/gotham-light-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-light-webfont.woff) format('woff'), url(../fonts/gotham-light-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Montseeratt';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/gotham-thin-webfont.eot);
+  src: local('Gotham Thin'), local('gotham-thin-webfont'), url(../fonts/gotham-thin-webfont.eot) format('embedded-opentype'), url(../fonts/gotham-thin-webfont.woff) format('woff'), url(../fonts/gotham-thin-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/museosansrounded-300-webfont.eot);
+  src: local('Museo Sans Rounded'), local('museosansrounded-300-webfont'), url(../fonts/museosansrounded-300-webfont.eot) format('embedded-opentype'), url(../fonts/museosansrounded-300-webfont.woff) format('woff'), url(../fonts/museosansrounded-300-webfont.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'Museo';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/museosansrounded-700-webfont.eot);
+  src: local('Museo Sans Rounded'), local('museosansrounded-700-webfont'), url(../fonts/museosansrounded-700-webfont.eot) format('embedded-opentype'), url(../fonts/museosansrounded-700-webfont.woff) format('woff'), url(../fonts/museosansrounded-700-webfont.svg) format('svg');
+}

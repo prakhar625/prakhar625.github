@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width=800 height=600 viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <style>
+        #p-shape, #i-shape{
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 6s ease-out forwards;
+            fill: hsla(56, 88%, 56%, 1);
+            stroke: hsla(0, 0%, 0%, 1);
+            stroke-width: 6;
+        }
+
+        @keyframes dash{
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+        #Rectangle{
+            fill: hsla(277, 88%, 56%, 0.05);
+        }
+        #w-shape{
+        fill: hsla(0, 0%, 0%, 1);
+        }
+    </style>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Icon">
+            <g id="Group">
+                <rect id="Rectangle" stroke="#A72EF2" stroke-width="0" stroke-dasharray="50,48" x="0" y="0" width="800" height="600" rx="25"></rect>
+                <g transform="translate(40, 45)">
+                    <polygon id="w-shape" points="120.35 359.5 152.15 359.5 203.75 208.6 255.35 359.5 287.15 359.5 360.35 148 321.65 148 271.55 303.7 219.95 147.4 188.75 147.4 137.15 303.7 87.05 148 47.15 148"></polygon>
+                    <polygon id="i-shape" points="400.25 358 437.15 358 437.15 148 400.25 148"></polygon>
+                    <path d="M493.25,358 L530.15,358 L530.15,290.5 L571.85,290.5 C618.05,290.5 655.85,265.9 655.85,218.8 L655.85,218.2 C655.85,175.9 624.95,148 576.05,148 L493.25,148 L493.25,358 Z M530.15,257.2 L530.15,181.6 L573.05,181.6 C600.65,181.6 618.35,194.5 618.35,219.1 L618.35,219.7 C618.35,241.6 600.95,257.2 573.05,257.2 L530.15,257.2 Z" id="p-shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
