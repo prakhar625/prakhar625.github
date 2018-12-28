@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'DDINRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 100vw;
+  margin: 0;
+  display: block;
+  overflow-x: hidden; }
+  body::-webkit-scrollbar {
+    width: 10px; }
+  body::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px; }
+  body::-webkit-scrollbar-track {
+    background: #4d00ad;
+    border-radius: 0px; }
+
+.frame {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: fixed;
+  left: 0px;
+  width: calc(100vw - 0px);
+  height: 100vh;
+  border: 30px solid #4d00ad;
+  border-right-width: 40px;
+  z-index: 9999; }
+  .frame:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    left: -30px;
+    bottom: 100px;
+    background: white;
+    z-index: 10000; }
+  .frame:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    right: -30px;
+    top: 200px;
+    background: white;
+    z-index: 10000;
+    top: 100px; }
+
+#dot-grid {
+  display: block;
+  position: fixed; }
+
+.content--container {
+  display: block; }
+  .content--container .sections {
+    display: block;
+    position: relative;
+    min-width: 960px;
+    width: calc(100vw);
+    padding: 200px 200px 20px;
+    margin: 0; }
+    .content--container .sections .section--title {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-family: 'BebasNeueBold';
+      background: black;
+      display: inline-block;
+      padding: 5px 10px 0;
+      color: white;
+      letter-spacing: 2px; }
+      .content--container .sections .section--title:before {
+        content: '';
+        background: black;
+        position: absolute;
+        width: calc(100% - $page-margin - $page-margin);
+        left: 200px;
+        top: 215px;
+        height: 1px;
+        z-index: -1; }
+    .content--container .sections.hero {
+      padding: 35vh 200px 0; }
+      .content--container .sections.hero .hero--banner {
+        width: 100%; }
+        .content--container .sections.hero .hero--banner .hero--banner-image {
+          width: 100%;
+          mask: url("../files/v6/pb-name-horizontal-black.svg"); }
+        .content--container .sections.hero .hero--banner .hero--subheading {
+          font-family: 'BebasNeueBold';
+          margin: 16px 0 24px;
+          font-size: 2em;
+          letter-spacing: 2px; }
+    .content--container .sections.about {
+      padding-top: 20px; }
+      .content--container .sections.about p {
+        font-size: 1.5em; }
+    .content--container .sections.work .section--content {
+      margin-top: 40px; }
+      .content--container .sections.work .section--content .work--tile-container {
+        display: inline-block;
+        width: calc(50% - 12px);
+        min-width: 100px;
+        height: 240px;
+        position: relative;
+        margin-left: 20px; }
+        .content--container .sections.work .section--content .work--tile-container:nth-child(odd) {
+          margin-left: 0; }
+        .content--container .sections.work .section--content .work--tile-container .work-tile--shadow {
+          width: 100%;
+          height: 240px;
+          background: #3f11a2;
+          filter: blur(24px);
+          opacity: 0.6;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          transform: scale(0.9) translateY(20px); }
+        .content--container .sections.work .section--content .work--tile-container .work-tile--layer {
+          background: white;
+          width: 100%;
+          height: 240px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+
+/*# sourceMappingURL=main_v6.css.map */
