@@ -52,7 +52,7 @@ var projects = [
             "sub": "A few microinteractions that I prototyped for the Web Application, during my time at Nestaway.com",
             "tags": [1, 2],
             "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
-            "ctaLink": "http://bit.ly/1wxPmiB",
+            "ctaLink": "http://prakhar625.github.io/WIP",
             "ctaText": "View on Behance",
         }
     },
