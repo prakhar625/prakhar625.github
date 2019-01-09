@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="782px" height="86px" viewBox="0 0 782 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
-    <title>masked-name</title>
-    <desc>Created with Sketch.</desc>
     <defs>
         <path d="M12.72,57 L0,57 L0,0 L18.36,0 C32.04,0 39.48,7.44 39.48,21.24 L39.48,27.96 C39.48,41.76 32.04,49.2 18.36,49.2 L12.72,49.2 L12.72,57 Z M12.72,67 L12.72,84 L0,84 L0,67 L12.72,67 Z M17.88,11.76 L12.72,11.76 L12.72,37.44 L17.88,37.44 C24,37.44 26.76,34.2 26.76,27.12 L26.76,22.08 C26.76,15 24,11.76 17.88,11.76 Z M61.56,57 L48.84,57 L48.84,0 L67.2,0 C80.88,0 88.32,7.44 88.32,21.24 L88.32,27.24 C88.32,36.12 85.2,42.36 79.32,45.72 L90.96,84 L77.52,84 L67.44,48.48 L61.56,48.48 L61.56,57 Z M61.56,67 L61.56,84 L48.84,84 L48.84,67 L61.56,67 Z M66.72,11.76 L61.56,11.76 L61.56,36.72 L66.72,36.72 C72.84,36.72 75.6,33.48 75.6,26.4 L75.6,22.08 C75.6,15 72.84,11.76 66.72,11.76 Z M126.36,0 L140.88,84 L127.92,84 L125.16,64.92 L111.12,64.92 L108.36,84 L95.64,84 L110.16,0 L126.36,0 Z M118.32,18 L117.96,18 L112.8,53.4 L123.48,53.4 L118.32,18 Z M193.92,0 L176.64,33.36 L194.28,84 L180.72,84 L168.24,47.28 L162.72,58.08 L162.72,84 L150,84 L150,0 L162.72,0 L162.72,35.04 L162.96,35.04 L180.6,0 L193.92,0 Z M214.56,57 L201.84,57 L201.84,0 L214.56,0 L214.56,35.4 L229.68,35.4 L229.68,0 L242.4,0 L242.4,84 L229.68,84 L229.68,47.4 L214.56,47.4 L214.56,57 Z M214.56,67 L214.56,84 L201.84,84 L201.84,67 L214.56,67 Z M282.24,0 L296.76,84 L283.8,84 L281.04,64.92 L267,64.92 L264.24,84 L251.52,84 L266.04,0 L282.24,0 Z M274.2,18 L279.36,53.4 L268.68,53.4 L273.84,18 L274.2,18 Z M348.24,84 L334.8,84 L324.72,48.48 L318.84,48.48 L318.84,57 L306.12,57 L306.12,0 L324.48,0 C338.16,0 345.6,7.44 345.6,21.24 L345.6,27.24 C345.6,36.12 342.48,42.36 336.6,45.72 L348.24,84 Z M318.84,67.2266667 L318.84,84 L306.12,84 L306.12,67 L318.84,67.2266667 Z M323.76,11.76 L318.6,11.76 L318.6,36.72 L323.76,36.72 C329.88,36.72 332.64,33.48 332.64,26.4 L332.64,22.08 C332.64,15 329.88,11.76 323.76,11.76 Z M397.8,0 C411,0 418.08,7.44 418.08,21.24 L418.08,22.8 C418.08,32.16 415.32,37.68 408.6,39.96 L408.6,40.2 C416.52,42.6 419.88,48.84 419.88,59.88 L419.88,62.76 C419.88,76.56 412.44,84 398.76,84 L380.04,84 L380.04,67.1171059 L392.756546,66.9561157 L392.756546,56.9959585 L380.04,56.9959585 L380.04,0 L397.8,0 Z M397.32,11.76 L392.76,11.76 L392.76,34.68 L396.72,34.68 C402.84,34.68 405.36,31.56 405.36,24.48 L405.36,21.72 C405.36,14.88 402.84,11.76 397.32,11.76 Z M397.68,46.44 L392.76,46.44 L392.76,72.24 L398.28,72.24 C404.4,72.24 407.16,69 407.16,61.92 L407.16,57.24 C407.16,49.8 404.4,46.44 397.68,46.44 Z M442.8,57 L430.08,57 L430.08,0 L442.8,0 L442.8,35.4 L457.92,35.4 L457.92,0 L470.64,0 L470.64,84 L457.92,84 L457.92,47.4 L442.8,47.4 L442.8,57 Z M442.8,67 L442.8,84 L430.08,84 L430.08,67 L442.8,67 Z M510.48,0 L525,84 L512.04,84 L509.28,64.92 L495.24,64.92 L492.48,84 L479.76,84 L494.28,0 L510.48,0 Z M502.44,18 L502.08,18 L496.92,53.4 L507.6,53.4 L502.44,18 Z M576.24,84 L562.8,84 L552.72,48.48 L546.84,48.48 L546.84,57 L534.12,57 L534.12,0 L552.48,0 C566.16,0 573.6,7.44 573.6,21.24 L573.6,27.24 C573.6,36.12 570.48,42.36 564.6,45.72 L576.24,84 Z M546.84,67.2266667 L546.84,84 L534.12,84 L534.12,67 L546.84,67.2266667 Z M552,11.76 L546.84,11.76 L546.84,36.72 L552,36.72 C558.12,36.72 560.88,33.48 560.88,26.4 L560.88,22.08 C560.88,15 558.12,11.76 552,11.76 Z M598.2,67.070878 L598.2,72.24 L603.24,72.24 C609.36,72.24 612.12,69 612.12,61.92 L612.12,22.08 C612.12,15 609.36,11.76 603.24,11.76 L598.2,11.76 L598.2,56.7855186 L585.48,56.7855186 L585.48,0 L603.72,0 C617.4,0 624.84,7.44 624.84,21.24 L624.84,62.76 C624.84,76.56 617.4,84 603.72,84 L585.48,84 L585.48,67.070878 L598.2,67.070878 Z M699.24,0 L686.28,84 L673.32,84 L666.12,33.96 L665.88,33.96 L658.56,84 L645.6,84 L632.64,0 L645.72,0 L653.04,55.68 L653.28,55.68 L660.48,0 L671.76,0 L678.96,55.68 L679.2,55.68 L686.52,0 L699.24,0 Z M734.52,0 L749.04,84 L736.08,84 L733.32,64.92 L719.28,64.92 L716.52,84 L703.8,84 L718.32,0 L734.52,0 Z M726.48,18 L726.12,18 L720.96,53.4 L731.64,53.4 L726.48,18 Z M781.2,0 L781.2,64.44 C781.2,77.88 774.84,85.2 761.64,85.2 C758.64,85.2 755.76,84.84 753.12,84.12 L753.84,72.48 C755.4,72.96 757.56,73.44 760.08,73.44 C765.96,73.44 768.48,70.56 768.48,64.08 L768.48,0 L781.2,0 Z" id="path-1"></path>
         <rect x="0" y="-1" width="781" height="85" id="rect-3"></rect>
+
+        <svg id="glitchmask-r" width="100%" height="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+            <line class="top-r" x1="0" y1="0" x2="100%" y2="0"> </line>
+            <line class="bot-r" x1="0" y1="100%" x2="100%" y2="100%"></line>
+        </svg>
+        <svg id="glitchmask-g" width="100%" height="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+            <line class="top-g" x1="0" y1="0" x2="100%" y2="0"></line>
+            <line class="bot-g" x1="0" y1="100%" x2="100%" y2="100%"></line>
+        </svg>
+
+        <filter color-interpolation-filters="sRGB" id="filter" width="100%" heigth="100%" x="0" y="0">
+            <feFlood flood-color="black" result="black" />
+
+            <!-- red text start -->
+            <feFlood flood-color="red" result="REDTXT_FLOOD_10" />
+            <feComposite operator="in" in="REDTXT_FLOOD_10" in2="SourceAlpha" result="REDTXT_COMP_20" />
+            <feOffset in="SourceGraphic" dx="-2" dy="0" result="REDTXT_OFFSET_30" />
+            <feMerge result="REDTXT_MERGE_40">
+                <feMergeNode in="black" />
+                <feMergeNode in="REDTXT_COMP_20" />
+                <feMergeNode in="REDTXT_OFFSET_30" />
+            </feMerge>
+            <feImage preserveAspectRatio="none" id="mask-r" result="REDTXT_IMG_50" xlink:href="#glitchmask-r" />
+            <feComposite in2="REDTXT_IMG_50" in="REDTXT_MERGE_40" operator="out" result="REDTXT_COMP_60" />
+            <!-- red text end -->
+
+            <!-- green text start -->
+            <feFlood flood-color="limegreen" result="GREENTXT_FLOOD_10" />
+            <feComposite operator="in" in="GREENTXT_FLOOD_10" in2="SourceAlpha" result="GREENTXT_COMP_20" />
+            <feOffset in="SourceGraphic" dx="2" dy="0" result="GREENTXT_OFFSET_30" />
+            <feMerge result="GREENTXT_MERGE_40">
+                <feMergeNode in="black" />
+                <feMergeNode in="GREENTXT_COMP_20" />
+                <feMergeNode in="GREENTXT_OFFSET_30" />
+            </feMerge>
+            <feImage preserveAspectRatio="none" id="mask-g" result="GREENTXT_IMG_50" xlink:href="#glitchmask-g" />
+            <feComposite in2="GREENTXT_IMG_50" in="GREENTXT_MERGE_40" operator="out" result="GREENTXT_COMP_60" />
+            <!-- green text end -->
+
+            <feMerge result="MERGE_10">
+                <feMergeNode in="SourceGraphic" />
+                <feMergeNode in="REDTXT_COMP_60" />
+                <feMergeNode in="GREENTXT_COMP_60" />
+            </feMerge>
+        </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="r-copy-4" transform="translate(-209.000000, -188.000000)">

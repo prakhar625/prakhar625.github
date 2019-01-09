@@ -1,4 +1,6 @@
 $page-margin: 200px;
+$frame-size: 30px;
+$indigo-color: #4d00ad;
 
 html, body{
     margin: 0;
@@ -13,6 +15,8 @@ html, body{
     -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
  body{
@@ -36,56 +40,72 @@ html, body{
         border-radius: 5px;
     }
     &::-webkit-scrollbar-track {
-        background: #4d00ad;
+        background: $indigo-color;
         border-radius: 0px;
     }
  }
 
- .frame{
-    $frame-size: 30px;
+ 
+ .frame--bottom{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
     position: fixed;
-    left: 0px;
-    width: calc(100vw - 0px);
-    height: 100vh;
-    border: $frame-size solid #4d00ad;
-    border-right-width: $frame-size + 10px;
-    z-index: 9999;
-
-    &:before{
-        content: '';
-        position: absolute;
-        width: $frame-size;
-        height: $frame-size * 2;
-        left: -$frame-size;
-        bottom: 100px;
-        background: white;
-        z-index: 10000;
-    }
-    &:after{
-        content: '';
-        position: absolute;
-        width: $frame-size + 10px;
-        height: $frame-size * 2;
-        right: - ($frame-size + 0px);
-        top: 200px;
-        background: white;
-        z-index: 10000;
-        top: 100px;
-    }
-
+    bottom: 0;
+    width: 100vw;
+    height: $frame-size;
+    background: $indigo-color;
+    z-index: 10000;
 }
+ 
+.frame--top{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 
-#dot-grid {
-    display:block;
     position: fixed;
+    top: 0;
+    width: 100vw;
+    height: $frame-size;
+    background: $indigo-color;
+    z-index: 10000;
 }
+
+    // &:before{
+    //     content: '';
+    //     position: absolute;
+    //     width: $frame-size;
+    //     height: $frame-size * 2;
+    //     left: -$frame-size;
+    //     bottom: 100px;
+    //     background: white;
+    //     z-index: 10000;
+    // }
+    // &:after{
+    //     content: '';
+    //     position: absolute;
+    //     width: $frame-size + 10px;
+    //     height: $frame-size * 2;
+    //     right: - ($frame-size + 0px);
+    //     top: 200px;
+    //     background: white;
+    //     z-index: 10000;
+    //     top: 100px;
+    // }
+
+// }
 
  .content--container{
     display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border: $frame-size solid $indigo-color;
+    border-bottom-width: 0;
+    border-top-width: 0;
+
     .sections{
         display: block;
         position: relative;
@@ -144,14 +164,40 @@ html, body{
                 margin-top: 40px;
                 .work--tile-container{
                     display: inline-block;
-                    width: calc(50% - 12px);
-                    min-width: 100px;
                     height: 240px;
                     position: relative;
-                    margin-left: 20px;
 
-                    &:nth-child(odd){
-                        margin-left: 0;
+                    &:hover{
+                        z-index: 9999;
+                        transform: scale(1.05);
+
+                        .work-tile--shadow{
+                            filter: blur(60px);
+                            opacity: 0.7;
+                        }
+
+                        .work-tile--overlay .project--content .project--cta, .work-tile--overlay .project--content a{
+                            background: rgba($indigo-color, 1);
+                            color: white;
+                        }
+                    }
+                    
+                    &.full{
+                        width: 100%;
+                        margin-bottom: 32px;
+                        padding-right: 20px;
+                    }
+
+                    &.by-two{
+                        width: calc(50% - 12px);
+                        min-width: 100px;
+                        margin-left: 20px;
+                        margin-bottom: 32px;
+                        padding-right: 20px;
+
+                        &:nth-child(odd){
+                            margin-left: 0;
+                        }
                     }
 
                     .work-tile--shadow{
@@ -173,6 +219,60 @@ html, body{
                         position: absolute;
                         top: 0;
                         left: 0;
+                    }
+
+                    .work-tile--overlay{
+                        height: 200px;
+                        padding: 20px;
+                        width: 100%;
+                        position: relative;
+
+                        .project--img{
+                            width: 30%;
+                            height: 100%;
+                            overflow: hidden;
+                            display: inline-block;
+                            vertical-align: top;
+                            background-size: cover;
+                            background-position: 50%;
+    
+                            img{
+                                max-height: 100%;
+                            }
+                        }
+                        
+                        .project--content{
+                            width: 69%;
+                            display: inline-block;
+                            vertical-align: top;
+                            padding-left: 20px;
+
+                            .project--title{
+                                font-size: 2rem;
+                            }
+
+                            .project-excerpt{
+                                font-size: 1.4rem;
+                            }
+
+                            .project--cta, a{
+                                padding: 0.8rem 1rem;
+                                background: rgba($indigo-color, 0.2);
+                                outline: none;
+                                border: none;
+                                color: $indigo-color;
+                                border-radius: 4px;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                letter-spacing: 5px;
+                                font-size: 0.7rem;
+                                margin-top: 2rem;
+                                display: inline-block;
+                                cursor: pointer;
+                                user-select: none;
+                                text-decoration: none;
+                            }
+                        }
                     }
                 }
             }
