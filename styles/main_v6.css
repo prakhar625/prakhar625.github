@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -10,7 +11,19 @@ html, body {
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+*::-moz-selection {
+  background: rgba(129, 28, 115, 0.2);
+  color: #4d00ad;
+}
+*::-webkit-selection {
+  background: rgba(129, 28, 115, 0.2);
+  color: #4d00ad;
+}
+*::selection {
+  background: rgba(129, 28, 115, 0.2);
+  color: #4d00ad;
 }
 
 body {
@@ -25,7 +38,7 @@ body {
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 2px;
 }
 body::-webkit-scrollbar-thumb {
   background: #fff;
@@ -119,6 +132,41 @@ body::-webkit-scrollbar-track {
 .content--container .sections.about p {
   font-size: 1.5em;
 }
+.content--container .sections.about .social-links {
+  margin: 0;
+  margin-top: 10px;
+}
+.content--container .sections.about .social-links li.social-link {
+  display: inline-block;
+  margin-right: 20px;
+  color: #4d00ad;
+  padding: 4px 10px;
+  border-bottom: 1px solid rgba(77, 0, 173, 0.6);
+}
+.content--container .sections.about .social-links li.social-link:first-child {
+  padding-left: 0;
+}
+.content--container .sections.about .social-links li.social-link:last-child {
+  padding-right: 0;
+}
+.content--container .sections.about .social-links li.social-link:hover {
+  background: #4d00ad;
+  color: white;
+}
+.content--container .sections.about .social-links li.social-link:hover:first-child {
+  padding-left: 10px;
+  color: white;
+}
+.content--container .sections.about .social-links li.social-link:hover:last-child {
+  padding-right: 10px;
+}
+.content--container .sections.about .social-links li.social-link a {
+  text-decoration: none;
+  color: #4d00ad;
+}
+.content--container .sections.about .social-links li.social-link a:hover {
+  color: white;
+}
 .content--container .sections.work .section--content {
   margin-top: 40px;
 }
@@ -128,16 +176,16 @@ body::-webkit-scrollbar-track {
   position: relative;
 }
 .content--container .sections.work .section--content .work--tile-container:hover {
-  z-index: 9999;
   transform: scale(1.05);
 }
 .content--container .sections.work .section--content .work--tile-container:hover .work-tile--shadow {
-  filter: blur(60px);
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .content--container .sections.work .section--content .work--tile-container:hover .work-tile--overlay .project--content .project--cta, .content--container .sections.work .section--content .work--tile-container:hover .work-tile--overlay .project--content a {
   background: #4d00ad;
   color: white;
+  opacity: 1;
+  transform: translateX(0px);
 }
 .content--container .sections.work .section--content .work--tile-container.full {
   width: 100%;
@@ -159,7 +207,7 @@ body::-webkit-scrollbar-track {
   height: 240px;
   background: #3f11a2;
   filter: blur(24px);
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
   top: 0px;
   left: 0;
@@ -172,6 +220,7 @@ body::-webkit-scrollbar-track {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 6px;
 }
 .content--container .sections.work .section--content .work--tile-container .work-tile--overlay {
   height: 200px;
@@ -198,14 +247,15 @@ body::-webkit-scrollbar-track {
   padding-left: 20px;
 }
 .content--container .sections.work .section--content .work--tile-container .work-tile--overlay .project--content .project--title {
+  font-family: "BebasNeueBold";
   font-size: 2rem;
 }
-.content--container .sections.work .section--content .work--tile-container .work-tile--overlay .project--content .project-excerpt {
-  font-size: 1.4rem;
+.content--container .sections.work .section--content .work--tile-container .work-tile--overlay .project--content .project--excerpt {
+  font-size: 1.2rem;
 }
 .content--container .sections.work .section--content .work--tile-container .work-tile--overlay .project--content .project--cta, .content--container .sections.work .section--content .work--tile-container .work-tile--overlay .project--content a {
   padding: 0.8rem 1rem;
-  background: rgba(77, 0, 173, 0.2);
+  background: rgba(77, 0, 173, 0.05);
   outline: none;
   border: none;
   color: #4d00ad;
@@ -214,11 +264,13 @@ body::-webkit-scrollbar-track {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: inline-block;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 /*# sourceMappingURL=main_v6.css.map */

@@ -6,6 +6,7 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
 
@@ -16,7 +17,20 @@ html, body{
     margin: 0;
     padding: 0;
 
-    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    &::-moz-selection { 
+        background: rgba(#811c73, 0.2);
+        color: $indigo-color; 
+    }
+    &::-webkit-selection { 
+        background: rgba(#811c73, 0.2);
+        color: $indigo-color; 
+    }
+    &::selection { 
+        background: rgba(#811c73, 0.2);
+        color: $indigo-color; 
+    }
 }
 
  body{
@@ -33,7 +47,7 @@ html, body{
     overflow-x: hidden;
 
     &::-webkit-scrollbar {
-        width: 10px;
+        width: 2px;
     }
     &::-webkit-scrollbar-thumb {
         background: #fff;
@@ -71,30 +85,6 @@ html, body{
     background: $indigo-color;
     z-index: 10000;
 }
-
-    // &:before{
-    //     content: '';
-    //     position: absolute;
-    //     width: $frame-size;
-    //     height: $frame-size * 2;
-    //     left: -$frame-size;
-    //     bottom: 100px;
-    //     background: white;
-    //     z-index: 10000;
-    // }
-    // &:after{
-    //     content: '';
-    //     position: absolute;
-    //     width: $frame-size + 10px;
-    //     height: $frame-size * 2;
-    //     right: - ($frame-size + 0px);
-    //     top: 200px;
-    //     background: white;
-    //     z-index: 10000;
-    //     top: 100px;
-    // }
-
-// }
 
  .content--container{
     display: block;
@@ -157,6 +147,50 @@ html, body{
             p{
                 font-size: 1.5em;
             }
+
+            .social-links{
+                margin: 0;
+                margin-top: 10px;
+
+                li.social-link{
+                    display: inline-block;
+                    margin-right: 20px;
+                    color: $indigo-color;
+                    padding: 4px 10px;
+                    border-bottom: 1px solid rgba($indigo-color, 0.6);
+
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    
+                    &:last-child{
+                        padding-right: 0;
+                    }
+
+                    &:hover{
+                        background: $indigo-color;
+                        color: white;
+                        
+                        &:first-child{
+                            padding-left: 10px;
+                            color: white;
+                        }
+
+                        &:last-child{
+                            padding-right: 10px;
+                        }
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: $indigo-color;
+
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
 
         &.work{
@@ -168,17 +202,19 @@ html, body{
                     position: relative;
 
                     &:hover{
-                        z-index: 9999;
+                        // z-index: 9999;
                         transform: scale(1.05);
 
                         .work-tile--shadow{
-                            filter: blur(60px);
-                            opacity: 0.7;
+                            // filter: blur(60px);
+                            opacity: 0.5;
                         }
 
                         .work-tile--overlay .project--content .project--cta, .work-tile--overlay .project--content a{
                             background: rgba($indigo-color, 1);
                             color: white;
+                            opacity: 1;
+                            transform: translateX(0px);
                         }
                     }
                     
@@ -205,7 +241,7 @@ html, body{
                         height: 240px;
                         background: hsla(259, 81%, 35%, 1);
                         filter: blur(24px);
-                        opacity: 0.6;
+                        opacity: 0.4;
                         position: absolute;
                         top: 0px;
                         left: 0;
@@ -219,6 +255,7 @@ html, body{
                         position: absolute;
                         top: 0;
                         left: 0;
+                        border-radius: 6px;
                     }
 
                     .work-tile--overlay{
@@ -248,16 +285,17 @@ html, body{
                             padding-left: 20px;
 
                             .project--title{
+                                font-family: 'BebasNeueBold';
                                 font-size: 2rem;
                             }
 
-                            .project-excerpt{
-                                font-size: 1.4rem;
+                            .project--excerpt{
+                                font-size: 1.2rem;
                             }
 
                             .project--cta, a{
                                 padding: 0.8rem 1rem;
-                                background: rgba($indigo-color, 0.2);
+                                background: rgba($indigo-color, 0.05);
                                 outline: none;
                                 border: none;
                                 color: $indigo-color;
@@ -266,11 +304,14 @@ html, body{
                                 text-transform: uppercase;
                                 letter-spacing: 5px;
                                 font-size: 0.7rem;
-                                margin-top: 2rem;
+                                margin-top: 1rem;
                                 display: inline-block;
                                 cursor: pointer;
                                 user-select: none;
                                 text-decoration: none;
+
+                                opacity: 0;
+                                transform: translateX(-50px);
                             }
                         }
                     }

@@ -13,10 +13,10 @@ var tags = [
 ];
 var projects = [
     {
-        "id": 11,
+        "id": 06,
         "details": {
-            "title": "Building a Design Language System for ClearTax",
-            "sub": "ClearTax Design Team's learnings and understandings while building the DLS",
+            "title": "ClearTax Design Language System",
+            "sub": "Learnings and understandings from when we were building the DLS",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2018/12/xScreenshot-2018-12-14-at-23.29.58.png.pagespeed.ic.VHqqIbyuDf.webp",
             "ctaLink": "http://uc.prakharb.com/ct-dls/",
@@ -24,9 +24,9 @@ var projects = [
         }
     },
     {
-        "id": 10,
+        "id": 05,
         "details": {
-            "title": "Is it possible to improve filter interaction on Github?",
+            "title": "Github filter interaction improvements",
             "sub": "Quick idea to improve the usability of filters on Github's Issues pages.",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2018/12/xScreenshot-2018-11-19-at-19.57.57.png.pagespeed.ic.gNhOlDBUoM.webp",
@@ -35,9 +35,9 @@ var projects = [
         }
     },
     {
-        "id": 09,
+        "id": 04,
         "details": {
-            "title": "Audio Visualiser",
+            "title": "Music Visualiser Experiment",
             "sub": "Background and thought process behind a small music visualiser that I made some time back, using THREE.js and WebAudio API",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2018/12/x1_CfnrtLr2KoTDs_r7afQ1gQ.png.pagespeed.ic.HUkhmAQ7X6.webp",
@@ -46,7 +46,7 @@ var projects = [
         }
     },
     {
-        "id": 08,
+        "id": 03,
         "details": {
             "title": "Nestaway Micro-interactions",
             "sub": "A few microinteractions that I prototyped for the Web Application, during my time at Nestaway.com",
@@ -57,9 +57,9 @@ var projects = [
         }
     },
     {
-        "id": 07,
+        "id": 02,
         "details": {
-            "title": "Trestor",
+            "title": "Trestor Branding & Experience",
             "sub": "Frontend Development for the web wallet application and UX Design for the application ecosystem, including the UI guideline",
             "tags": [1, 2],
             "thumbnail": "https://prakhar625.github.io/images/work/trestor-index.png",
@@ -68,71 +68,82 @@ var projects = [
         }
     },
     {
-        "id": 06,
-        "details": {
-            "title": "Illustrations at Housing.com",
-            "sub": "Branding, UX & UI for the Accounts Recievable Chrome Extension and Web App",
-            "tags": [1, 2],
-            "thumbnail": "https://prakhar625.github.io/images/work/hb-index.png",
-            "ctaLink": "http://bit.ly/Q6TyWJ",
-            "ctaText": "View on Behance",
-        }
-    },
-    {
-        "id": 05,
-        "details": {
-            "title": "BOARRD",
-            "sub": "User Interface for a concept web-app that helps people manage bookmarks",
-            "tags": [11],
-            "thumbnail": "https://prakhar625.github.io/images/work/boarrd-index.png",
-            "ctaLink": "http://bit.ly/1wxqPKJ",
-            "ctaText": "View on Behance",
-        }
-    },
-    {
-        "id": 04,
-        "details": {
-            "title": "Gamespot",
-            "sub": "UI for a concept Game Review Website",
-            "tags": [11],
-            "thumbnail": "https://prakhar625.github.io/images/work/gamespot.png",
-            "ctaLink": "http://bit.ly/1wxvQmj",
-            "ctaText": "View on Behance",
-        }
-    },
-    {
-        "id": 03,
-        "details": {
-            "title": "Waves 2014",
-            "sub": "Branding & Website Design for the college festival",
-            "tags": [10, 11],
-            "thumbnail": "https://prakhar625.github.io/images/work/waves-web.png",
-            "ctaLink": "http://bit.ly/Q6ZZZL",
-            "ctaText": "View on Behance",
-        }
-    },
-    {
-        "id": 02,
-        "details": {
-            "title": "Waves 2014 Posters",
-            "sub": "A couple of posters I made during my undergraduate studies.",
-            "tags": [2],
-            "thumbnail": "https://prakhar625.github.io/images/work/waves-posters.png",
-            "ctaLink": "http://bit.ly/12BHhR5",
-            "ctaText": "View on Behance",
-        }
-    },
-    {
         "id": 01,
         "details": {
-            "title": "Illustrations at Housing.com",
-            "sub": "A few Illustrations for the 404 & 500 pages",
+            "title": "Behance Portfolio",
+            "sub": "A bunch of past work, mostly illustrations and branding. Please don't hate me because of this.",
             "tags": [1, 2],
             "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
-            "ctaLink": "http://bit.ly/1wxPmiB",
-            "ctaText": "View on Behance",
+            "ctaLink": "https://www.behance.net/prakharbhardwaj",
+            "ctaText": "Visit Behance",
         }
     },
+    // {
+    //     "id": 06,
+    //     "details": {
+    //         "title": "Illustrations at Housing.com",
+    //         "sub": "Branding, UX & UI for the Accounts Recievable Chrome Extension and Web App",
+    //         "tags": [1, 2],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/hb-index.png",
+    //         "ctaLink": "http://bit.ly/Q6TyWJ",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
+    // {
+    //     "id": 05,
+    //     "details": {
+    //         "title": "BOARRD",
+    //         "sub": "User Interface for a concept web-app that helps people manage bookmarks",
+    //         "tags": [11],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/boarrd-index.png",
+    //         "ctaLink": "http://bit.ly/1wxqPKJ",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
+    // {
+    //     "id": 04,
+    //     "details": {
+    //         "title": "Gamespot",
+    //         "sub": "UI for a concept Game Review Website",
+    //         "tags": [11],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/gamespot.png",
+    //         "ctaLink": "http://bit.ly/1wxvQmj",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
+    // {
+    //     "id": 03,
+    //     "details": {
+    //         "title": "Waves 2014",
+    //         "sub": "Branding & Website Design for the college festival",
+    //         "tags": [10, 11],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/waves-web.png",
+    //         "ctaLink": "http://bit.ly/Q6ZZZL",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
+    // {
+    //     "id": 02,
+    //     "details": {
+    //         "title": "Waves 2014 Posters",
+    //         "sub": "A couple of posters I made during my undergraduate studies.",
+    //         "tags": [2],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/waves-posters.png",
+    //         "ctaLink": "http://bit.ly/12BHhR5",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
+    // {
+    //     "id": 01,
+    //     "details": {
+    //         "title": "Illustrations at Housing.com",
+    //         "sub": "A few Illustrations for the 404 & 500 pages",
+    //         "tags": [1, 2],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
+    //         "ctaLink": "http://bit.ly/1wxPmiB",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
 ];
 
 var frag = document.createDocumentFragment();
@@ -172,6 +183,7 @@ for (p in projects) {
 
             var cta = textCont.appendChild(document.createElement("a"));
             cta.className = "project--cta";
+            cta.setAttribute('target', '__blank__');
             cta.innerHTML = projects[p].details.ctaText;
             cta.href = projects[p].details.ctaLink;
     
