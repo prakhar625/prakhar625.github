@@ -13,6 +13,17 @@ var tags = [
 ];
 var projects = [
     {
+        "id": 07,
+        "details": {
+            "title": "Designing Shared Dynamic Experiences",
+            "sub": "Thought-process around a feature design job that I undertook recently – at Farmizen",
+            "tags": [1, 2],
+            "thumbnail": "http://uc.prakharb.com/content/images/2019/01/post-thumbnail.jpg",
+            "ctaLink": "http://uc.prakharb.com/farmizen-team-buy/",
+            "ctaText": "View",
+        }
+    },
+    {
         "id": 06,
         "details": {
             "title": "ClearTax Design Language System",
@@ -37,7 +48,7 @@ var projects = [
     {
         "id": 04,
         "details": {
-            "title": "Music Visualiser Experiment",
+            "title": "3D Music Visualiser",
             "sub": "Background and thought process behind a small music visualiser that I made some time back, using THREE.js and WebAudio API",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2018/12/x1_CfnrtLr2KoTDs_r7afQ1gQ.png.pagespeed.ic.HUkhmAQ7X6.webp",
@@ -45,17 +56,17 @@ var projects = [
             "ctaText": "View",
         }
     },
-    {
-        "id": 03,
-        "details": {
-            "title": "Nestaway Micro-interactions",
-            "sub": "A few microinteractions that I prototyped for the Web Application, during my time at Nestaway.com",
-            "tags": [1, 2],
-            "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
-            "ctaLink": "http://prakhar625.github.io/WIP",
-            "ctaText": "View on Behance",
-        }
-    },
+    // {
+    //     "id": 03,
+    //     "details": {
+    //         "title": "Nestaway Micro-interactions",
+    //         "sub": "A few microinteractions that I prototyped for the Web Application, during my time at Nestaway.com",
+    //         "tags": [1, 2],
+    //         "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
+    //         "ctaLink": "http://prakhar625.github.io/WIP",
+    //         "ctaText": "View on Behance",
+    //     }
+    // },
     {
         "id": 02,
         "details": {
