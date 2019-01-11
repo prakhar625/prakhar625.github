@@ -15,7 +15,7 @@ var projects = [
     {
         "id": 07,
         "details": {
-            "title": "Designing Shared Dynamic Experiences",
+            "title": "Designing Multi-User Experiences",
             "sub": "Thought-process around a feature design job that I undertook recently – at Farmizen",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2019/01/post-thumbnail.jpg",
