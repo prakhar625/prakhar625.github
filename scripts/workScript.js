@@ -74,7 +74,7 @@ var projects = [
             "sub": "Frontend Development for the web wallet application and UX Design for the application ecosystem, including the UI guideline",
             "tags": [1, 2],
             "thumbnail": "https://prakhar625.github.io/images/work/trestor-index.png",
-            "ctaLink": "https://prakhar625.github.io/work/trestor",
+            "ctaLink": "http://uc.prakharb.com/work-at-trestor/",
             "ctaText": "View Project",
         }
     },
