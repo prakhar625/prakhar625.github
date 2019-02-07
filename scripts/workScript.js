@@ -15,8 +15,8 @@ var projects = [
     {
         "id": 07,
         "details": {
-            "title": "Designing Multi-User Experiences",
-            "sub": "Thought-process around a feature design job that I undertook recently – at Farmizen",
+            "title": "Designing Experiences for Groups",
+            "sub": "Thought-process around a small feature design job that I undertook recently – at Farmizen",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2019/01/post-thumbnail.jpg",
             "ctaLink": "http://uc.prakharb.com/farmizen-team-buy/",
@@ -81,11 +81,11 @@ var projects = [
     {
         "id": 01,
         "details": {
-            "title": "Behance Portfolio",
-            "sub": "A bunch of past work, mostly illustrations and branding. Please don't hate me because of this.",
+            "title": "Highlights from Nestaway",
+            "sub": "A few of the interesting things I worked on, during my time at Nestaway",
             "tags": [1, 2],
-            "thumbnail": "https://prakhar625.github.io/images/work/ills.png",
-            "ctaLink": "https://www.behance.net/prakharbhardwaj",
+            "thumbnail": "https://uc.prakharb.com/content/images/2019/02/xScreenshot-1999-02-05-at-15.30.55-1.png.pagespeed.ic.zSc8Hnk0L-.webp",
+            "ctaLink": "http://uc.prakharb.com/nestaway-filter-ui-interactive-rehaul/",
             "ctaText": "Visit Behance",
         }
     },
