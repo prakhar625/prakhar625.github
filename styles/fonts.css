@@ -69,6 +69,7 @@
 /* DDin Font Family */
 @font-face {
   font-family: 'DDINCondensed';
+  font-display: swap;
       src: url('../fonts/DDINCondensed.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -76,6 +77,7 @@
 
 @font-face {
   font-family: 'DDINCondensedBold';
+  font-display: swap;
       src: url('../fonts/DDINCondensedBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -83,6 +85,7 @@
 
 @font-face {
   font-family: 'DDINCondensedDINCondensedBold';
+  font-display: swap;
       src: url('../fonts/DDINCondensedDINCondensedBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -90,6 +93,7 @@
 
 @font-face {
   font-family: 'DDINCondensedRegular';
+  font-display: swap;
       src: url('../fonts/DDINCondensedRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -97,6 +101,7 @@
 
 @font-face {
   font-family: 'DDINDINBold';
+  font-display: swap;
       src: url('../fonts/DDINDINBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -104,6 +109,7 @@
 
 @font-face {
   font-family: 'DDINDINItalic';
+  font-display: swap;
       src: url('../fonts/DDINDINItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -111,6 +117,7 @@
 
 @font-face {
   font-family: 'DDINExpDINExpBold';
+  font-display: swap;
       src: url('../fonts/DDINExpDINExpBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -118,6 +125,7 @@
 
 @font-face {
   font-family: 'DDINExpDINExpItalic';
+  font-display: swap;
       src: url('../fonts/DDINExpDINExpItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -125,6 +133,7 @@
 
 @font-face {
   font-family: 'DDINExpRegular';
+  font-display: swap;
       src: url('../fonts/DDINExpRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -132,6 +141,7 @@
 
 @font-face {
   font-family: 'DDINRegular';
+  font-display: swap;
       src: url('../fonts/DDINRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
