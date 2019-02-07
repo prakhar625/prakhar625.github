@@ -84,7 +84,7 @@ var projects = [
             "title": "Highlights from Nestaway",
             "sub": "A few of the interesting things I worked on, during my time at Nestaway",
             "tags": [1, 2],
-            "thumbnail": "https://uc.prakharb.com/content/images/2019/02/xScreenshot-1999-02-05-at-15.30.55-1.png.pagespeed.ic.zSc8Hnk0L-.webp",
+            "thumbnail": "http://uc.prakharb.com/content/images/2019/02/xScreenshot-2019-02-05-at-15.30.55-1.png.pagespeed.ic.zSc8Hnk0L-.webp",
             "ctaLink": "http://uc.prakharb.com/nestaway-filter-ui-interactive-rehaul/",
             "ctaText": "Visit Behance",
         }
