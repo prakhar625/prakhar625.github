@@ -146,3 +146,12 @@
   font-weight: normal;
   font-style: normal;
     }
+
+/* Bebas Neue Bold*/
+@font-face {
+  font-family: 'BebasNeueBold';
+  font-display: swap;
+      src: url('../fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    }
