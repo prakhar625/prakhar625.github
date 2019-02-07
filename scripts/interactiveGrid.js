@@ -382,6 +382,5 @@ isDesktop = navigator.platform.match(/HP-UX/i)
 
 // run only if a mobile device
 if(!!isDesktop && !isMobile){
-    console.log(navigator.platform, !!isDesktop, !!isMobile)
     new App().init();
 }

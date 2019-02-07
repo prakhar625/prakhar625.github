@@ -78,10 +78,10 @@
     </main>
 
     <!-- render work block -->
-    <script src="./scripts/workScript.js"></script>
+    <script async src="./scripts/workScript.js"></script>
 
     <!-- Start of Async Drift Code -->
-    <script>
+    <script defer>
       "use strict";
       
       !function() {
@@ -109,14 +109,14 @@
       </script>
       <!-- End of Async Drift Code -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
-    <script src="./scripts/OrbitControls.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
+    <script defer src="./scripts/OrbitControls.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script defer src="scripts/interactiveGrid.js"></script>
     <!-- <script src="scripts/dotGrid.js"></script> -->
-    <script src="scripts/interactiveGrid.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID-->
-    <script>
+    <script defer>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
