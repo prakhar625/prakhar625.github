@@ -1,4 +1,4 @@
-/* font files */
+/* font files
 
 @font-face {
   font-family: 'Montseeratt';
@@ -63,3 +63,76 @@
   src: url(../fonts/museosansrounded-700-webfont.eot);
   src: local('Museo Sans Rounded'), local('museosansrounded-700-webfont'), url(../fonts/museosansrounded-700-webfont.eot) format('embedded-opentype'), url(../fonts/museosansrounded-700-webfont.woff) format('woff'), url(../fonts/museosansrounded-700-webfont.svg) format('svg');
 }
+
+*/
+
+/* DDin Font Family */
+@font-face {
+  font-family: 'DDINCondensed';
+      src: url('../fonts/DDINCondensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINCondensedBold';
+      src: url('../fonts/DDINCondensedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINCondensedDINCondensedBold';
+      src: url('../fonts/DDINCondensedDINCondensedBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINCondensedRegular';
+      src: url('../fonts/DDINCondensedRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINDINBold';
+      src: url('../fonts/DDINDINBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINDINItalic';
+      src: url('../fonts/DDINDINItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+    }
+
+@font-face {
+  font-family: 'DDINExpDINExpBold';
+      src: url('../fonts/DDINExpDINExpBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINExpDINExpItalic';
+      src: url('../fonts/DDINExpDINExpItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+    }
+
+@font-face {
+  font-family: 'DDINExpRegular';
+      src: url('../fonts/DDINExpRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DDINRegular';
+      src: url('../fonts/DDINRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    }
