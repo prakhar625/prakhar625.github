@@ -118,9 +118,9 @@ h1, h2, h3, h4, h5, h6, .title, .heading{
     .sections{
         display: block;
         position: relative;
-        min-width: 960px;
-        width: calc(100vw);
-        padding: $page-margin $page-margin 20px;
+        max-width: 960px;
+        width: calc(90vw);
+        padding: $page-margin 5vw 20px;
         margin: 0;
         
         .section--title{
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6, .title, .heading{
             }
         }
         &.hero{
-            padding: 35vh $page-margin 0;
+            padding: 35vh 5vw 0;
              .hero--banner{
                  width: 100%;
                  .hero--banner-image{
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6, .title, .heading{
         }
 
         &.about{
-            padding-top: 20px;
+            padding-top: 40vh;
             p{
                 font-size: 1.5em;
             }

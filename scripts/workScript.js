@@ -81,7 +81,7 @@ var projects = [
     {
         "id": 01,
         "details": {
-            "title": "Highlights from Nestaway",
+            "title": "Experiemnts at Nestaway",
             "sub": "A few of the interesting things I worked on, during my time at Nestaway",
             "tags": [1, 2],
             "thumbnail": "http://uc.prakharb.com/content/images/2019/02/xScreenshot-2019-02-05-at-15.30.55-1.png.pagespeed.ic.zSc8Hnk0L-.webp",
