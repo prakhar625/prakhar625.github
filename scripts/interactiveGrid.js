@@ -1,3 +1,4 @@
+// helper functions
 const radians = (degrees) => {
     return degrees * Math.PI / 180;
 }
@@ -351,5 +352,36 @@ class App {
     }
 }
 
+// scrappy platform detection
+let isMobile = false;
+isMobile = navigator.platform.match(/iPhone/i)
+|| navigator.platform.match(/iPod/i)
+|| navigator.platform.match(/iPad/i)
+|| navigator.platform.match(/Android/i)
+|| navigator.platform.match(/Opera/i)
+|| navigator.platform.match(/BlackBerry/i)
+|| navigator.platform.match(/arm/i)
+|| navigator.platform.match(/pike/i)
+|| navigator.platform.match(/Nintendo/i)
+|| navigator.platform.match(/Symbian/i)
+|| navigator.platform.match(/S60/i)
+|| navigator.platform.match(/PSP/i)
 
-new App().init();
+let isDesktop = false
+isDesktop = navigator.platform.match(/HP-UX/i)
+|| navigator.platform.match(/Linux/i)
+|| navigator.platform.match(/Mac/i)
+|| navigator.platform.match(/SunOS/i)
+|| navigator.platform.match(/Win/i)
+|| navigator.platform.match(/Pocket PC/i)
+|| navigator.platform.match(/OS/i)
+|| navigator.platform.match(/BSD/i)
+|| navigator.platform.match(/PlayStation/i)
+|| navigator.platform.match(/masking-agent/i)
+|| navigator.platform.match(/WebTV/i)
+
+// run only if a mobile device
+if(!!isDesktop && !isMobile){
+    console.log(navigator.platform, !!isDesktop, !!isMobile)
+    new App().init();
+}
