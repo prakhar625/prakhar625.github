@@ -175,7 +175,8 @@ for (p in projects) {
 
         var imgCont = overlay.appendChild(document.createElement("div"));
         imgCont.className = "project--img";
-        imgCont.style = "background-image: url("+projects[p].details.thumbnail+")";
+        imgCont.setAttribute('style-data', "background-image: url("+projects[p].details.thumbnail+")");
+        // imgCont.style = ; // let's lazyload it after the DOM is ready
 
             // var img = imgCont.appendChild(document.createElement("img"));
             // img.src = projects[p].details.thumbnail;

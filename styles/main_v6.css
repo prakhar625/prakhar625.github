@@ -1,3 +1,4 @@
+@import url("./normalize.min.css");
 html, body {
   margin: 0;
   padding: 0;
@@ -94,9 +95,9 @@ body::-webkit-scrollbar-track {
 .content--container .sections {
   display: block;
   position: relative;
-  min-width: 960px;
-  width: calc(100vw);
-  padding: 200px 200px 20px;
+  max-width: 960px;
+  width: calc(90vw);
+  padding: 200px 5vw 20px;
   margin: 0;
 }
 .content--container .sections .section--title {
@@ -120,7 +121,7 @@ body::-webkit-scrollbar-track {
   z-index: -1;
 }
 .content--container .sections.hero {
-  padding: 35vh 200px 0;
+  padding: 35vh 5vw 0;
 }
 .content--container .sections.hero .hero--banner {
   width: 100%;
@@ -136,7 +137,7 @@ body::-webkit-scrollbar-track {
   letter-spacing: 2px;
 }
 .content--container .sections.about {
-  padding-top: 20px;
+  padding-top: 40vh;
 }
 .content--container .sections.about p {
   font-size: 1.5em;
@@ -209,6 +210,7 @@ body::-webkit-scrollbar-track {
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
+  background: #dad9d9;
   background-size: cover;
   background-position: 50%;
 }
@@ -333,7 +335,42 @@ body::-webkit-scrollbar-track {
     display: block;
   }
 }
-@media only screen and (min-device-width: 960px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 960px) {
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two {
+    display: block;
+    width: 100%;
+    margin: 32px 0;
+    height: auto;
+    padding: 0;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--shadow {
+    height: 100%;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--layer {
+    height: 100%;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--overlay {
+    height: fit-content;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--overlay .project--img {
+    display: block;
+    width: calc(100% + 40px);
+    height: 300px;
+    margin-bottom: 20px;
+    transform: translate(-20px, -20px);
+    border-radius: 6px 6px 0 0;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--overlay .project--content {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two .work-tile--overlay .project--content .project--cta {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 961px) {
   .content--container .sections.about .social-links {
     margin: 0;
     margin-top: 10px;
