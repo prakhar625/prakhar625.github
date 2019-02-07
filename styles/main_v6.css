@@ -95,7 +95,6 @@ body::-webkit-scrollbar-track {
 .content--container .sections {
   display: block;
   position: relative;
-  max-width: 960px;
   width: calc(90vw);
   padding: 200px 5vw 20px;
   margin: 0;
@@ -137,7 +136,8 @@ body::-webkit-scrollbar-track {
   letter-spacing: 2px;
 }
 .content--container .sections.about {
-  padding-top: 40vh;
+  padding-top: 20vh;
+  max-width: 960px;
 }
 .content--container .sections.about p {
   font-size: 1.5em;
@@ -518,6 +518,26 @@ body::-webkit-scrollbar-track {
     right: 50%;
     transform: translate(50%, -20px);
     opacity: 1;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover {
+    transform: scale(1);
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--shadow {
+    opacity: 1;
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--overlay .project--img {
+    transform: translate(-20px, -20px);
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--overlay .project--content {
+    transform: translateX(0px);
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--overlay .project--content .project--cta, .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--overlay .project--content a {
+    opacity: 1;
+    transform: translate(50%, 0px);
+  }
+  .sections.work .section--content .work--tile-container.work--tile-container.by-two:hover .work-tile--shine {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.2;
   }
 }
 

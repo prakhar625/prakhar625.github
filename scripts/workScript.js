@@ -177,6 +177,7 @@ for (p in projects) {
         imgCont.className = "project--img";
         imgCont.setAttribute('style-data', "background-image: url("+projects[p].details.thumbnail+")");
         // imgCont.style = ; // let's lazyload it after the DOM is ready
+        imgCont.style = "background-image: url("+projects[p].details.thumbnail+")";
 
             // var img = imgCont.appendChild(document.createElement("img"));
             // img.src = projects[p].details.thumbnail;

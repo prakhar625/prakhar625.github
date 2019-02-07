@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6, .title, .heading{
     .sections{
         display: block;
         position: relative;
-        max-width: 960px;
+        // max-width: 960px;
         width: calc(90vw);
         padding: $page-margin 5vw 20px;
         margin: 0;
@@ -162,7 +162,8 @@ h1, h2, h3, h4, h5, h6, .title, .heading{
         }
 
         &.about{
-            padding-top: 40vh;
+            padding-top: 20vh;
+            max-width: 960px;
             p{
                 font-size: 1.5em;
             }
@@ -650,6 +651,34 @@ body{
                                 opacity: 1;
 
                             }
+                        }
+                    }
+
+                    &:hover{
+                        transform: scale(1);
+
+                        .work-tile--shadow{
+                            opacity: 1;
+                        }
+
+                        .work-tile--overlay{
+                            .project--img{
+                                transform: translate(-20px, -20px);
+                            }
+
+                            .project--content{
+                                transform: translateX(0px);
+
+                               .project--cta, a{
+                                  opacity: 1;
+                                  transform: translate(50%, 0px);
+                              }
+                           }
+                        }
+
+                        .work-tile--shine{
+                            transform: scale(1) translate(0, 0);
+                            opacity: 0.2;
                         }
                     }
                 }
