@@ -207,3 +207,6 @@ for (p in projects) {
 document.getElementById("workSamples").appendChild(frag);
 
 
+// update years of exp in body
+document.getElementById('yearsOfExp').innerText =   new Date().getFullYear() - 2015;
+document.getElementById('copyrightYear').innerText =   new Date().getFullYear();
