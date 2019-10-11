@@ -11,6 +11,19 @@
     transition: all 120ms cubic-bezier(0.6, -0.1, 0.74, 0.05);
 }
 
+*::-moz-selection {
+    background: rgba(129, 28, 115, 0.2);
+    color: #4d00ad;
+}
+*::-webkit-selection {
+    background: rgba(129, 28, 115, 0.2);
+    color: #4d00ad;
+}
+*::selection {
+    background: rgba(129, 28, 115, 0.2);
+    color: #4d00ad;
+}
+
 h1, h2, h3, h4, h5, h6, .title, .heading {
     font-family: "BebasNeueBold", -apple-system, Arial, Helvetica, sans-serif;
     letter-spacing: 1.2px;

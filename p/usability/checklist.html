@@ -28,10 +28,13 @@
             padding: 1rem;
             width: 100%;
             max-width: 600px;
-            border-radius: 8px;
+            border-radius: 0px;
             margin-bottom: 1rem;
+            border-left: 1px solid #4d00ad;
         }
         section.usability-dimension:hover{
+            border-radius: 8px;
+            border-left: 1px solid transparent;
             box-shadow: 0 18px 40px 0px rgba(0,0,0,0.1);
         }
 
@@ -47,7 +50,7 @@
             padding: 0.4rem 8px;
             cursor: pointer;
             user-select: none;
-            border-radius: 4px;
+            border-bottom: 1px solid transparent;
         }
         li.sub-list--item:first-child{
             padding: 4px 8px 0.4rem 8px;
@@ -55,17 +58,28 @@
         li.sub-list--item:last-child{
             padding: 0.4rem 8px 4px 8px;           
         }
-        li.sub-list--item:hover{
-            background: rgba(0,0,0,0.05);
+        .sub-list--item-text{
+        }
+        li.sub-list--item:hover .sub-list--item-text{
+            text-decoration: underline;
+            text-decoration-color: #4d00ad;
         }
         input.sub-list--item-checkbox{
             margin-right: 8px;
         }
+        input[type="checkbox"] + label{
+            text-decoration: none;
+        }
+        input[type="checkbox"]:checked + label{
+            text-decoration: line-through;
+            opacity: 0.3;
+        }
+
     </style>
 </head>
 <body>
     <h1 class="page-title">Usability Checklist</h1>
-    <span>for your next project</span>
+    <span>for every project, big or small!</span>
 
     <hr class="separator">
 
@@ -76,14 +90,18 @@
         .then(response => response.json())
         .then(d => {
             // do stuff here
+            createAListAndInject(d);
+            
+        });
 
-            const sections = Object.keys(d);
+        const createAListAndInject = (data) => {
+            const sections = Object.keys(data);
 
             const parentWrapper = document.createElement('div');
 
             for (s in sections){
                 const sectionKey = sections[s];
-                const sectionData = d[sectionKey];
+                const sectionData = data[sectionKey];
 
                 const createdSection = createASection(sectionData);
                 parentWrapper.appendChild(createdSection);
@@ -92,8 +110,7 @@
             const frag = document.createDocumentFragment();
             frag.appendChild(parentWrapper);
             document.querySelector('.checklist').appendChild(frag);
-        });
-
+        }
         const createASection = (data) => {
             const wrapper = document.createElement('section');
             wrapper.classList.add('usability-dimension');
@@ -115,7 +132,7 @@
                 checkbox.classList.add('sub-list--item-checkbox');
                 listItem.appendChild(checkbox);
 
-                const listText = document.createElement('span');
+                const listText = document.createElement('label');
                 listText.classList.add('sub-list--item-text');
                 listText.innerText = data.items[d];
                 listItem.appendChild(listText);
@@ -125,6 +142,9 @@
 
             wrapper.appendChild(list);
             return wrapper;
+        }
+        const handleSectionSelection = (data) =>{
+
         }
     </script>
     
