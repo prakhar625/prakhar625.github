@@ -1,0 +1,26 @@
+@import url("./normalize.min.css");
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    transition: all 120ms cubic-bezier(0.6, -0.1, 0.74, 0.05);
+}
+
+h1, h2, h3, h4, h5, h6, .title, .heading {
+    font-family: "BebasNeueBold", -apple-system, Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+body {
+    font-family: "DDINRegular", -apple-system, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}

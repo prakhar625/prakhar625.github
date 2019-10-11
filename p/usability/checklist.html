@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usability Checklist</title>
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <style>
+        body{
+            padding: 5vw;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title{
+            margin: 0.5rem 0;
+            display: inline-block;
+        }
+
+        .separator{
+            margin: 0 0 1rem 0;
+            opacity: 0.2;
+        }
+
+        section.usability-dimension{
+            padding: 1rem;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        section.usability-dimension:hover{
+            box-shadow: 0 18px 40px 0px rgba(0,0,0,0.1);
+        }
+
+        .section-title{
+            margin-bottom: 1rem;
+        }
+
+        ul.sub-list{
+            list-style: none;
+        }
+
+        li.sub-list--item{
+            padding: 0.4rem 8px;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 4px;
+        }
+        li.sub-list--item:first-child{
+            padding: 4px 8px 0.4rem 8px;
+        }
+        li.sub-list--item:last-child{
+            padding: 0.4rem 8px 4px 8px;           
+        }
+        li.sub-list--item:hover{
+            background: rgba(0,0,0,0.05);
+        }
+        input.sub-list--item-checkbox{
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">Usability Checklist</h1>
+    <span>for your next project</span>
+
+    <hr class="separator">
+
+    <div class="checklist"></div>
+
+    <script>
+        fetch("./checklist.json")
+        .then(response => response.json())
+        .then(d => {
+            // do stuff here
+
+            const sections = Object.keys(d);
+
+            const parentWrapper = document.createElement('div');
+
+            for (s in sections){
+                const sectionKey = sections[s];
+                const sectionData = d[sectionKey];
+
+                const createdSection = createASection(sectionData);
+                parentWrapper.appendChild(createdSection);
+            }
+
+            const frag = document.createDocumentFragment();
+            frag.appendChild(parentWrapper);
+            document.querySelector('.checklist').appendChild(frag);
+        });
+
+        const createASection = (data) => {
+            const wrapper = document.createElement('section');
+            wrapper.classList.add('usability-dimension');
+
+            const title = document.createElement('h3');
+            title.classList.add('section-title');
+            title.innerText = data.title;
+            wrapper.appendChild(title);
+
+            const list = document.createElement('ul');
+            list.classList.add('sub-list');
+
+            for (d in data.items){
+                const listItem = document.createElement('li');
+                listItem.classList.add('sub-list--item');
+                
+                const checkbox = document.createElement('input');
+                checkbox.setAttribute('type', 'checkbox');
+                checkbox.classList.add('sub-list--item-checkbox');
+                listItem.appendChild(checkbox);
+
+                const listText = document.createElement('span');
+                listText.classList.add('sub-list--item-text');
+                listText.innerText = data.items[d];
+                listItem.appendChild(listText);
+
+                list.appendChild(listItem);
+            }
+
+            wrapper.appendChild(list);
+            return wrapper;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+    "ux":{
+        "title": "User Experience",
+        "items": [
+            "Registering provides value to users. Unnecessary registration is avoided.",
+            "Website is credible. Credible references, credentials, contact information, location, and images of real people are displayed on the website.",
+            "Website is professionally designed and up-to-date.",
+            "Sample content. For example there is a sample newsletter next to a newsletter sign up form.",
+            "Personalized features. Currency, language, country specific deals, taxes, or delivery options are changed based on user's location. IP-based geolocation is not enabled without user's permission.",
+            "Transparent pricing. Prices are clearly displayed. There are no hidden costs or surprises in the terms.",
+            "Uncluttered product and service information. Information is scannable and images can be enlarged or zoomed in on for more detailed viewing.",
+            "Onboarding experiences are avoided by making the app intuitive and easy to use. In case onboarding is used, it is easy to dismiss or skip."
+        ]
+    },
+    "home":{
+        "title": "Homepage",
+        "items": [
+            "Clear call for action. Users know what to do next and why it benefits them. They understand the value proposition and purpose of the site",
+            "First impression. The homepage creates a positive first impression and supports conversion.",
+            "Logged in user's name is displayed on the site.",
+            "Major changes to the site are announced on the homepage. For example website downtimes.",
+            "Company location and contact information is easily accessible from the homepage.",
+            "There is a privacy policy, and terms & conditions especially in case the site gathers information about users.",
+            "For European users, the site complies with the General Data Protection Regulation (GDPR), agreed upon by the European Parliament and Council.",
+            "Images and videos are relevant and meaningful. No unrelated stock photos of models. There are high-quality screenshots, videos or photos of the products and services."
+        ]
+    },
+    "a11y":{
+        "title": "Accessibility",
+        "items": [
+            "Alt attributes are provided for non-text elements, such as images and maps. Captions and transcriptions are used for audio and video.",
+            "Color alone is not used to convey information.",
+            "Content is readable without a style sheet.",
+            "Accessible navigation. Site can be navigated with a keyboard, without using a mouse. Browser's keyboard shortcuts aren't overridden.",
+            "Links, buttons and checkboxes are easily clickable, for example a user can select a checkbox by clicking the text, not just the checkbox."
+        ]
+    },
+    "nav":{
+        "title": "Navigation",
+        "items": [
+            "Important links aren't placed in moving features, for example auto-rotating carousels and accordions.",
+            "Alphabetical sorting is used only when there are no better alternatives, such as grouping items into descriptive, related groups.",
+            "Navigation is consistent on every page.",
+            "Links are descriptive. There are no 'click here' links.",
+            "There is a site description in the window title, which is easily understandable as a bookmark.",
+            "Site's URL is memorable."
+        ]
+    },
+    "search":{
+        "title": "Search",
+        "items": [
+            "There is a search bar, in case of a large website.",
+            "Search is available on every page, not just the homepage.",
+            "Search box is wide enough, so that users can see what they've typed."
+        ]
+    },
+    "links":{
+        "title": "Links",
+        "items": [
+            "Important commands are displayed as buttons, not links. For example 'Buy' or 'Pay' is a button, not a link.",
+            "Links are easily recognizable. They look clickable. Items that aren't links don't look clickable, for example underlining text is avoided.",
+            "Color. Visited links color is different than unvisited.",
+            "There are no broken links."
+        ]
+    },
+    "layout":{
+        "title": "Layout",
+        "items": [
+            "Important content is displayed first.",
+            "Site is responsive. Works with different screen sizes. There is no horizontal scrolling.",
+            "Related information is grouped together clearly.",
+            "There are a minimum amount of pop-up windows",
+            "Consistency. Page layouts are consistent across the whole website.",
+            "Pages aren't cluttered. There is enough white space to support scanning."
+        ]
+    },
+    "error":{
+        "title": "Errors",
+        "items": [
+            "Browser compatibility. Site works in various browsers.",
+            "User testing. Testing with target users is done at different stages of the project. People who weren't involved in developing the site conduct testing.",
+            "Error pages. Site has custom 404 and 500 error pages.",
+            "Security. Site has an SSL certificate."
+        ]
+    },
+    "forms":{
+        "title": "Forms",
+        "items": [
+            "Simplicity. Only absolutely necessary questions are asked in forms.",
+            "Long dropdown menus are avoided. Instead users can input text, which is validated on the backend.",
+            "Fields are labeled with common terms, e.g. Name, Address (supports autofill).",
+            "Form submission is confirmed on e.g. a confirmation page.",
+            "Error messages are shown next to the input field, not just on top of the page."
+        ]
+    },
+    "content":{
+        "title": "Content",
+        "items": [
+            "Contrast. There is adequate contrast between the text and background.",
+            "Content is scannable. There are short paragraphs, descriptive headings, lists and images. Visual content is used when appropriate, instead of large amounts of text.",
+            "Content is written with common language that users easily understand.",
+            "Contact and company information is clearly displayed.",
+            "Content is useful and up-to-date, providing answers to the most common questions asked by users. There are no long instructions.",
+            "Use of uppercase letters in prose text is avoided. Uppercase is used only for formatting."
+        ]
+    }
+
+}
